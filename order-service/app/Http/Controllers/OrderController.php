@@ -15,7 +15,7 @@ class OrderController extends Controller
 
     public function store(Request $request)
     {
-       
+
         // Check if user exists
         $response = Http::get(env('USER_SERVICE_URL') . '/api/users/' . $request->user_id);
 
